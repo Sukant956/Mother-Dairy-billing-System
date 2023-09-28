@@ -84,7 +84,9 @@ class MotherDairy
                       double gst=total*18/100;
                        System.out.print("\t\tGST: "+gst+"\n");
 
-                     System.out.print("Net Payable Amount is:- "+(total+gst)+"/-");					   
+                     System.out.print("Net Payable Amount is:- "+(total+gst)+"/-");	
+					 int actualQty=obj.getQty()-qty;
+					 obj.setQty(actualQty);				   
 
  					
 					}
